@@ -21,7 +21,7 @@ window.onload=()=>{
 }
 
 function validarFormulario(){
-    if(validarNombre()){
+    if(validarNombre() && validarApellido() && validarEdad() && validarEmail() && validarPass1() && validarPass2() && validarTelefono()){
         return true;
     }else{
         return false;
